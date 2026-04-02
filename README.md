@@ -1,10 +1,11 @@
-# sotto-site（WordPress テーマ）
+#オリジナルサイト(架空の雑貨ショップ)
+（WordPress テーマ）
 
 このリポジトリは、やさしく自然な雰囲気を大切にして作った  
 オリジナルサイトを WordPress テーマとして再構築したものです。
 
 静的サイトとして作ったデザインを、  
-「管理画面からやさしく編集できるサイト」に育てていくことを目指しました。
+「管理画面から編集できるサイト」に育てていくことを目指しました。
 
 ---
 
@@ -53,26 +54,11 @@ WordPress の仕組みに合わせてテーマを組み立てています。
 
 ---
 
-## 📁 テーマの主なファイル
-- header.php  
-- footer.php  
-- functions.php  
-- single-product.php  
-- archive-product.php  
-- taxonomy-product_category.php  
-- template-parts/  
-- assets/  
-
-WordPress のテンプレート階層に沿って、  
-必要なページを丁寧に分けて作っています。
-
----
-
 ## 🌸 このテーマを作った目的
 - 静的サイトを WordPress 化する流れを学ぶ  
 - カスタム投稿タイプや ACF を使って、編集しやすいサイトを作る  
 - テンプレート階層や PHP の基本を理解する  
-- “やさしい世界観” をそのまま WordPress に落とし込む  
+- 静的サイトをそのまま WordPress に落とし込む  
 
 ---
 
