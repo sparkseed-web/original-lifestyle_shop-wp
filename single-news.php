@@ -1,10 +1,11 @@
 <?php get_header();?>
 
-<section class="news">
+    <div class="single-news">
+    <section id="news">
             <div class="wrapper">
                 <div class="title">
                     <h2>NEWS</h2>
-                    <div class="subtitle">ニュース</div>
+                    <div class="subtitle"><?php the_title(); ?></div>
                 </div>
 
                 <ul>
@@ -13,11 +14,11 @@
                         while(have_posts()): //投稿の数だけ繰り返す
                         the_post(); //回数に応じた投稿の情報を取得
                     ?>
-                        <li>
-                            <a href="<?php the_permalink(); ?>" class="news-link">
+                        <li class="news-link">
+                            
                                 <time  class="link-underline" datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
-                                <p class="link-underline"><?php the_excerpt(); ?></p>
-                            </a>
+                                <p class="link-underline"><?php the_content(); ?></p>
+                            
                         </li>
                     
                     <?php 
@@ -39,6 +40,6 @@
                 <a href="<?php echo esc_url( home_url() ); ?>" class="more-btn">TOPに戻る</a>
             </div>
             
-        </section>
-
+    </section>
+    </div>
 <?php get_footer();?>

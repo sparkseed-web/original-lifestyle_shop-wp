@@ -602,6 +602,14 @@ section:first-of-type .title h2{
     
 }
 
+.single-news .subtitle {
+    padding-top: 25px;
+}
+
+.single-news .news-link {
+    display: block;
+}
+
 
 /* メイン下部飾り画像 */
 

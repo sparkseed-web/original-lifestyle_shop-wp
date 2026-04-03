@@ -62,21 +62,21 @@
         );  
     }
 
-    add_theme_support('post-thumbnails');
+//     add_theme_support('post-thumbnails');
 
-     //カスタム投稿
-    add_action('init' ,'create_product_post_type');
+//      //カスタム投稿
+//     add_action('init' ,'create_product_post_type');
 
-    function create_product_post_type(){
+//     function create_product_post_type(){
 
-        register_post_type('product' , [
-            'label' => '商品',
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => ['slug' => 'product'],
-            'supports' => ['title' , 'editor' , 'thumbnail' ],
-            'menu_icon' => 'dashicons-cart'
-        ]);
+//         register_post_type('product' , [
+//             'label' => '商品',
+//             'public' => true,
+//             'has_archive' => true,
+//             'rewrite' => ['slug' => 'product'],
+//             'supports' => ['title' , 'editor' , 'thumbnail' ],
+//             'menu_icon' => 'dashicons-cart'
+//         ]);
 
-    }
-?>
+//     }
+// ?>

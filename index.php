@@ -63,14 +63,22 @@
 
             <ul>
                 <?php
-                if (have_posts()):  //投稿があれば処理に入る
-                    while (have_posts()): //投稿の数だけ繰り返す
-                        the_post(); //回数に応じた投稿の情報を取得
+                // 1. 「newsの棚から5件取ってきて」という指示書（$args）を作る
+                $args = array(
+                    'post_type' => 'news', 
+                    'posts_per_page' => 5,
+                );
+                // 2. 指示書を渡して記事を取得する（$news_query）
+                $news_query = new WP_Query($args); 
                 ?>
+
+                <?php if ($news_query->have_posts()): ?>
+                    <?php while ($news_query->have_posts()): $news_query->the_post(); ?>    
+                
                         <li>
                             <a href="<?php the_permalink(); ?>" class="news-link">
                                 <time class="link-underline" datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
-                                <p class="link-underline"><?php the_excerpt(); ?></p>
+                                <p class="link-underline"><?php the_title(); ?></p>
                             </a>
                         </li>
 
