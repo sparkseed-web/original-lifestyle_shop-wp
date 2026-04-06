@@ -389,10 +389,8 @@ section:first-of-type .title h2{
     font-family: var(--font-family-ja);
     display: grid;
     grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
-;
     gap: 5vh;
     position: relative;
-    font-size: 24px;
 }
 
 .item img {
@@ -405,6 +403,12 @@ section:first-of-type .title h2{
     transform: scale(1.1);
 }
 
+.taxonomy-product_category .to-toppage {
+    position: absolute;
+    transform:translateX(-50%);      /*中央に配置しているが少し右にズレてるためつけた */
+    bottom: 0%;
+}    
+
 .single-product .addCartButton {
     background-color: var(--accent-color);
 }
@@ -416,7 +420,7 @@ section:first-of-type .title h2{
 .single-product .category-container {
     max-width: 1100px;
     padding: 300px 50px 150px;
-}
+    }
 
 .single-product section:first-of-type .title h2 {
     font-size: 1.5rem;
@@ -495,6 +499,8 @@ section:first-of-type .title h2{
     width: calc(100% - 70px);
 
 }
+
+
 
 
 
@@ -724,9 +730,9 @@ section:first-of-type .title h2{
 }
 
 /* メール送信成功メッセージ */
-.wpcf7-response-output {
+/* .wpcf7-response-output {
     
-}
+} */
 
 .wpcf7 .wpcf7-mail-sent-ok {
     text-align: center;

@@ -16,7 +16,11 @@
                 <div class="img"><?php the_post_thumbnail(); ?></div>
                 <div class="inner">
                     <div class="title"><h2><?php the_title(); ?></h2></div>
-                    <h3 class="praice">￥220(税込み)</h3>
+                    
+                    <?php if ( get_field('price') ): ?>
+                        <h3 class="praice"><?php the_field('price'); ?>円</h3>
+                    <?php endif; ?>
+
                     <a href="" class="addCartButton">カートに入れる</a>
                     <a href="" class="addToFavorites">お気に入りに登録</a>
                     <div class="product-description">
