@@ -17,7 +17,7 @@
                         <li class="news-link">
                             
                                 <time  class="link-underline" datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
-                                <p class="link-underline"><?php the_content(); ?></p>
+                                <?php the_content(); ?>
                             
                         </li>
                     

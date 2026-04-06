@@ -45,28 +45,28 @@
             
             <div class="header-nav-inner">
                 <div class="logo-area">
-                    <a href="/">
+                    <a href="<?php echo esc_url(get_home_url()); ?>">
                         <img class="brand-icon" src="<?php echo get_template_directory_uri() . '/images/kotori.jpg'?>" alt="sottoのブランドアイコン">
                     </a>
                     <div class="titles">
-                        <p class="brand-logo"><a href="/">sotto</a></p>
-                        <a class="brand-subtitle" href="/">静かに、やさしく、よりそう</a>
+                        <p class="brand-logo"><a href="<?php echo esc_url(get_home_url()); ?>">sotto</a></p>
+                        <a class="brand-subtitle" href="<?php echo esc_url(get_home_url()); ?>">静かに、やさしく、よりそう</a>
                     </div>
                     
                 </div>
             </div>
 
             <ul class="en">
-                <li><a href="/">TOP</a></li>
+                <li><a href="<?php echo esc_url(get_home_url()); ?>">TOP</a></li>
                 <li><a href="/">ABOUT US</a></li>
-                <li><a href="/#category">CATEGORY</a></li>
+                <li><a href="<?php echo esc_url(get_home_url()); ?>">CATEGORY</a></li>
                 <li><a href="/#news">NEWS</a></li>
                 <li><a href="/">COLUMN</a></li>
             </ul>
 
             <ul class="jp">
                 <li><a href="/">あなたのお気に入り</a></li>
-                <li><a href="/">お問い合わせ</a></li>  
+                <li><a href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></li>  
                 <li><a href="/">よくあるご質問</a></li>
                 <li><a href="/">配送・お支払いについて</a></li>
             </ul>

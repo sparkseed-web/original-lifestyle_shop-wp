@@ -13,7 +13,7 @@
     
     --text-light-color:white;
     --text-muted-color: #888888;
-    --dark-color:#5C5C5C;
+    --dark-color:#333333;
 
     --icon-light-color:#DCDCB2;
     --sub-color:#72887c;
@@ -328,7 +328,7 @@ video {
     padding: 300px 80px 150px 80px;
 }
 
-.category-name {
+#category-name {
     font-size: 1.2rem;
 }
 
@@ -379,7 +379,7 @@ video {
 }
 
 section:first-of-type .title h2{
-    background-image: url("../images/check.png");
+    background-image: url(../images/check.png);
     background-size: cover;
 }
 
@@ -392,19 +392,25 @@ section:first-of-type .title h2{
 ;
     gap: 5vh;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 .item img {
     width: 190px;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 50%;
     transition: transform 0.8s ease;
+    border-radius: 50%;
 }
 
 .item img:hover{
     transform: scale(1.1);
+}
+
+.single-product .addCartButton {
+    background-color: var(--accent-color);
+}
+
+.single-product .addToFavorites {
+    background-color: #E39393;
 }
 
 .single-product .category-container {
@@ -454,15 +460,16 @@ section:first-of-type .title h2{
     padding: 10px 20px;
     color: var(--text-light-color);
     width: 150px;
-    text-align: center;
+    text-align: center;}
+
+.single-product h3 {
+    
+    font-size: 1.7rem;
 }
 
-.single-product .addCartButton {
-    background-color: var(--accent-color);
-}
-
-.single-product .addToFavorites {
-    background-color: #E39393;
+.single-product .category-container .to-toppage {
+    position: absolute;
+    bottom: 0%;
 }
 
 .single-product h4 {
@@ -489,16 +496,6 @@ section:first-of-type .title h2{
 
 }
 
-.single-product h3 {
-    
-    font-size: 1.7rem;
-}
-
-.single-product .category-container .to-toppage {
-    position: absolute;
-    bottom: 0%;
-}
-
 
 
 /* ニュースセクション */
@@ -510,7 +507,7 @@ section:first-of-type .title h2{
 }
 
 #news h2{
-    background-image: url("../images/定番で使いやすい！健康エコグリーン・チェ.png");
+    background-image: url(../images/定番で使いやすい！健康エコグリーン・チェ.png);
 }
 
 #news .wrapper {
@@ -530,42 +527,42 @@ section:first-of-type .title h2{
     line-height: 4;
 }
 
-#news  .news-link li {
+#news .news-link li {
     margin-top: 40px;
 }
 
-#news  .link-underline    {
+#news .link-underline    {
         transition: opacity 0.5s ease, border-color 0.5s ease, border-width 0.5s ease,
     transform 0.5s ease;
         border-bottom: 1px solid transparent;
 }
 
-#news  .news-link:hover .link-underline{    
+#news .news-link:hover .link-underline{    
     /* opacity: 0.6; */
     border-color:currentColor;
     border-width: 2px;           /* 太さをふわっと太く */
   transform: translateY(3px)
 }
 
-#news  ul {
+#news ul {
     padding-inline-start: 0;
 }
 
-#news  li {
+#news li {
     margin: 0 auto;
     letter-spacing: 0.05em;
     font-size: 18px;
     line-height: 1.7;
 }
 
-#news  li time {
+#news li time {
     font-family: var(--font-family-latin);
     /* width: 15%; */
     margin-right: 5%;
     color: var(--text-muted-color);
 }
 
-#news  li p {
+#news li p {
     font-family: var(--font-family-ja);
     /* width: 80%; */
     color: var(--dark-color);
@@ -602,10 +599,6 @@ section:first-of-type .title h2{
     
 }
 
-.single-news .subtitle {
-    padding-top: 25px;
-}
-
 .single-news .news-link {
     display: block;
 }
@@ -630,7 +623,118 @@ section:first-of-type .title h2{
     background: rgba(255,255,255,0.4);
 }
 
+/* ------------------------------
+    puroduct 商品カテゴリーページ
+------------------------------ */
 
+.product-page .decoration-bottom {
+    
+    
+    bottom: 0%;
+    right: -10vw;
+    margin-right: 50px;
+}
+
+.top {
+    font-size: 24px;
+    font-family: var(--font-family-ja);
+    color: var(--accent-color);
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+}
+
+/* ------------------------------
+    お問い合わせページ
+------------------------------ */
+
+.page-contact {
+    background-color: #ECF6D9;
+    padding-top: 80px;
+}
+
+.page-contact h2 {
+    background-image: url(../images/check.png);
+    background-size: cover;
+}
+
+.page-contact .contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+     width: 100%;   /*max-width と width: 100% は常にセットで書く */
+    padding: 0 50px 100px 50px;
+    box-sizing: border-box;
+    
+}
+
+.page-contact .contact-form input[type="text"],
+.page-contact .contact-form input[type="email"],
+.page-contact .contact-form input[type="tel"],
+.page-contact .contact-form select,
+.page-contact .contact-form textarea {
+    width: 100%;        
+    
+    display: block;     /*  ラベルの下に入力欄を配置するため */
+    box-sizing: border-box;
+    padding: 16px;
+    margin: 8px 0 24px 0;
+    border:1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.page-contact input:focus,
+.page-contact textarea:focus{
+    outline: none;
+    border: 2px solid var(--main-dark-color) !important;
+}
+
+.page-contact .contact-form textarea {
+    resize: vertical;
+}
+
+
+.page-contact .contact-form input[type="checkbox"]{
+    margin: 32px 0 16px 0; 
+    transform: scale(1.5);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.page-contact .form-item-agreement {
+    text-align: center;
+}
+
+
+.page-contact .contact-form input[type="submit"] {
+
+    padding: 16px 32px;
+    background-color: white;
+    border: 3px solid #E39393;
+    transition: all 0.5s;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.page-contact .contact-form input[type="submit"]:hover {
+    background-color: #E39393;
+    color: white;
+    border-color: white;
+}
+
+/* メール送信成功メッセージ */
+.wpcf7-response-output {
+    
+}
+
+.wpcf7 .wpcf7-mail-sent-ok {
+    text-align: center;
+    font-size: 16px;
+    padding: 16px !important;
+    color: #555 !important;   
+    border-radius: 5px;
+}
 
 
 
@@ -897,17 +1001,17 @@ footer .sns-icons {
     レスポンシブ・幅767px：ニュースセクション
 ------------------------------ */
 
-    #news  {
+    #news {
         padding: 10vh 5vw;
     }
 
-    #news  .wrapper {
+    #news .wrapper {
         max-width: 600px;
         border-radius: 50px;
         padding: 50px 0 100px 0;
     }
 
-    #news  li {
+    #news li {
         flex-direction: column;
         align-items: flex-start;
         font-size: 0.8rem;
