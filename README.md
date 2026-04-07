@@ -82,7 +82,8 @@ Advanced Custom Fields（ACF） を使用し、商品ごとに異なる商品仕
 ```php<?php if ( get_field('size') ): ?>  
    <dt>サイズ</dt>  
    <dd><?php the_field('size'); ?></dd>  
-<?php endif; ?>   ```
+<?php endif; ?>
+```
 
 このように、カスタムフィールドの値の有無を判定してから出力することで、不要なタグが生成されないようにしています。  
 
