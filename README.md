@@ -20,7 +20,7 @@
 
 ---
 
-## 🌱 使用しているもの
+## 🌱 使用技術
 - WordPress
 - PHP
 - Advanced Custom Fields（ACF）
