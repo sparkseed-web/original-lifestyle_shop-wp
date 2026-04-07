@@ -12,8 +12,9 @@
 ---
 
 ## 🌸 このテーマを作った目的
+- Wordpressの環境構築の手順を学ぶ
 - 静的サイトを WordPress 化する流れを学ぶ  
-- カスタム投稿タイプや ACF を使って、編集しやすいサイトを作る  
+- メインループを使って管理しやすいサイトを作る
 - テンプレート階層や PHP の基本を理解する
 - お問い合わせメールを送受信できるようにする  
 - 静的サイトをそのまま WordPress に落とし込む
@@ -21,10 +22,12 @@
 ---
 
 ## 🌱 使用技術
-- WordPress
-- PHP
-- Advanced Custom Fields（ACF）
-- HTML / CSS
+- 言語: HTML / CSS / jQuery / PHP
+- CMS: WordPress:6.9.4
+- プラグイン: Advanced Custom Fields（ACF）/ Contact Form 7 / Custom Post Type UI
+- 開発環境: Local (旧 Local by Flywheel)
+           Local 動作環境: Web Server: nginx / PHP: 8.2.27/ Database: MySQL 8.0.35 
+                        
 
 必要なところだけ PHP を使いながら、  
 WordPress の仕組みに合わせてテーマを組み立てています。
@@ -69,6 +72,16 @@ WordPress の仕組みに合わせてテーマを組み立てています。
 さまざまなアイテムに対応できるようにしています。
 
 ---
+
+## こだわったポイント  
+① カスタム投稿タイプを利用して商品カテゴリーをWordpressの管理画面から紐づいて表示できるようにし、HTML、CSSを知らない人がサイトを更新する際でもカテゴリー名の変更や商品の追加を出来るようにしました。
+
+②  プラグイン ACF を使って、商品の仕様を各商品に必要な項目だけ表示できるようにすることで管理しやすいサイトにすることを意識しました。
+
+## 苦労した点  
+- Wordpressの基礎理解
+- テンプレート階層の活用
+- 
 
 ## 💡 補足
 このリポジトリには WordPress 本体や `wp-config.php` は含めていません。  
