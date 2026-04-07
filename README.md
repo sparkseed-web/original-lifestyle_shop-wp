@@ -25,7 +25,7 @@
 - 言語: HTML / CSS / jQuery / PHP
 - CMS: WordPress:6.9.4
 - プラグイン: Advanced Custom Fields（ACF）/ Contact Form 7 / Custom Post Type UI
-- 開発環境: Local (旧 Local by Flywheel)
+- 開発環境: Local (旧 Local by Flywheel)  
            Local 動作環境: Web Server: nginx / PHP: 8.2.27/ Database: MySQL 8.0.35 
                         
 
