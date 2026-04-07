@@ -91,9 +91,16 @@ Advanced Custom Fields（ACF） を使用し、商品ごとに異なる商品仕
 ---
 
 ## 苦労した点  
-- Wordpressの基礎理解
+- WordPress固有の作法(functions.php)への対を
+HTMLの読み込み部分（CSSやGoogle Fonts）をWordpressの作法に則って``functions.php``へ移行する際、``add_action``、``wp_enqueue_scripts``などの仕組み(意味)を理解するのに苦労しました。今回初めてWordpress化して一番初めに躓いた点です。
 
-- テンプレート階層の活用
+【学びと解決策】 
+学習サイトやAIを活用しながら以下の構造をを一つずつ紐解いて理解を深めました。
+・``add_action``の理解:Wordpressの関数・「合図が鳴ったら実行する処理」を登録するもの。「add_action('wp_enqueue_scripts','add_styles');」と書くと「サイト公開時にスタイルを追加する処理を行う」という意味になることが理解できました。
+
+- テンプレート階層の活用  
+
+  
 - カスタム投稿タイプとタクソノミーの設計  
 初歩的なミスではありますが、「投稿タイプ」と「タクソノミー（カテゴリー）」の役割を混同しており、スラッグ名が混乱してしまうトラブルがありました。
 
