@@ -32,7 +32,9 @@ WordPress:6.9.4
 Advanced Custom Fields（ACF）/ Contact Form 7 / Custom Post Type UI
   
 ### 開発環境  
-VS Code(エディタ) / Git・GitHub(バージョン管理・ソースコード交換) / Local (旧 Local by Flywheel) (Wordpress ローカル環境構築)   
+**WordPressのローカル開発環境（Local）にて制作・動作確認を行っております。**
+
+VS Code(エディタ) / Git・GitHub(バージョン管理・ソースコード公開) / Local (旧 Local by Flywheel) (Wordpress ローカル環境構築)   
  　        ［ Local 動作環境 ］  
  　       　   Web Server: nginx / PHP: 8.2.27/ Database: MySQL 8.0.35 
                         
