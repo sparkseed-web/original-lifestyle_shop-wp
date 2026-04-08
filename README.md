@@ -1,7 +1,7 @@
 ---
 # オリジナルサイト(架空の雑貨ショップ)（WordPress テーマ）
 
-
+![メインビジュアル](screenshots/screenshot-main.png)
 
 ## 概要
 架空の雑貨ショップのオリジナルサイトを WordPress テーマとして再構築したものです。
