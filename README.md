@@ -11,6 +11,27 @@
 
 ---
 
+## ■ スクリーンショット  
+### トップページ全体
+<img src="screenshots/screenshot-all.png" width="800">  
+
+### 各ページ詳細
+
+<table width="100%">
+   <tr>
+      <td width="50%">
+         <p>カテゴリー一覧</p>
+         <img src="screenshots/screenshot-category-new.png" width="100%">
+      </td>
+      <td width="50%">
+         <p>商品詳細</p>
+         <img src="screenshots/screenshot-item-note.png" width="100%">
+      </td>
+   </tr>
+</table>
+
+---
+
 ## 🌸 このテーマを作った目的
 - Wordpressの環境構築の手順を学ぶ
 - 静的サイトを WordPress 化する流れを学ぶ  
