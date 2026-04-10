@@ -609,6 +609,10 @@ section:first-of-type .title h2{
     display: block;
 }
 
+.single-news #news .link-underline {
+    border-bottom: 0;
+}
+
 
 /* メイン下部飾り画像 */
 
@@ -984,7 +988,7 @@ footer .sns-icons {
     max-width: 400px;
 
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 15vh;
     }
 
     .category-name {
@@ -1001,7 +1005,7 @@ footer .sns-icons {
 }
 
     .decoration-bottom {
-    bottom: -10vh;
+    bottom: -1vh;
     right: 5vw;
     margin-right: 0;
 }
@@ -1031,6 +1035,9 @@ footer .sns-icons {
     top: -5%;
 }
 
+.single-product .decoration-bottom {
+    bottom: -10vh;
+}
 
 /* ------------------------------
     レスポンシブ・幅767px：ニュースセクション
