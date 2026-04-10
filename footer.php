@@ -167,7 +167,7 @@
                 <div class="footer-nav-right jp ">
                     <ul>
                         <li><a href="/" class="link-underline">あなたのお気に入り</a></li>
-                        <li><a href="/" class="link-underline">お問い合わせ</a></li>
+                        <li><a href="<?php echo esc_url(home_url('./contact')); ?>" class="link-underline">お問い合わせ</a></li>
                         <li><a href="/" class="link-underline">よくあるご質問</a></li>
                         <li><a href="/" class="link-underline">配送・お支払いについて</a></li>
                     </ul>
