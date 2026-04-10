@@ -1,9 +1,9 @@
 
-# オリジナルサイト(架空の雑貨ショップ)（WordPress テーマ）  
+# オリジナルサイト（架空の雑貨ショップ）（WordPress テーマ）  
 
 <img src="screenshots/screenshot-main.png" width="100%">  
 
-## 概要
+## 概要  
 架空の雑貨ショップのオリジナルサイトを WordPress テーマとして再構築したものです。
 
 静的サイトとして作ったデザインを、  
@@ -23,7 +23,7 @@
          <p>カテゴリー一覧</p>
          <img src="screenshots/screenshot-category-new.png" width="100%">
       </td>
-      <td width="50%">
+      <td valign="top" width="50%">
          <p>商品詳細</p>
          <img src="screenshots/screenshot-item-note.png" width="100%">
       </td>
