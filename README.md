@@ -19,13 +19,17 @@
 
 <table width="100%">
    <tr>
-      <td width="50%">
+      <td width="33%">
          <p>カテゴリー一覧</p>
          <img src="screenshots/screenshot-category-new.png" width="100%">
       </td>
-      <td valign="top" width="50%">
+      <td valign="top" width="33%">
          <p>商品詳細</p>
          <img src="screenshots/screenshot-item-note.png" width="100%">
+      </td>
+      <td valign="top" width="33%">
+         <p>お問い合わせ</p>
+         <img src="screenshots/screenshot-contact.png" width="100%">
       </td>
    </tr>
 </table>
