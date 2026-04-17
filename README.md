@@ -1,5 +1,5 @@
 
-# オリジナルサイト（架空の雑貨ショップ）（WordPress テーマ）  
+# sotto｜雑貨ショップ(WordPressオリジナルテーマ)
 
 <img src="screenshots/screenshot-main.png" width="100%">  
 
